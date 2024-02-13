@@ -1,0 +1,14 @@
+import turtle
+
+def draw_shape_with_color(sides, color):
+    angle = 360 / sides  
+    turtle.fillcolor(color)  
+    turtle.begin_fill() 
+    for _ in range(sides):  
+        turtle.forward(100) 
+        turtle.right(angle)  
+    turtle.end_fill()  
+
+draw_shape_with_color(4, "red") 
+
+
